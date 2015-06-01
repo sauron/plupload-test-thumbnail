@@ -41,6 +41,7 @@ class PressesController < ApplicationController
   # POST /presses.json
   def create
     @press = Press.new(params[:press])
+    @press.image = params[:file_image]
 
     respond_to do |format|
       if @press.save
