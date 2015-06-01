@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @press.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @press.description %>
+</p>
+
+<p>
+  <b>image:</b>
+  <%= image_tag @press.image.url(:thumb) %>
+</p>
+
+
+<%= link_to 'Edit', edit_press_path(@press) %> |
+<%= link_to 'Back', presses_path %>

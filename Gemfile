@@ -9,7 +9,7 @@ gem "unicorn",              "~> 4.8.3", require: false
 gem "figaro",               "~> 0.7.0"
 gem "mysql2",               "~> 0.3.16"
 
-gem 'paperclip',            '~> 2.3.8'
+gem 'paperclip',            '4.2.1'
 
 # Gems used only for assets and not required
 # in production environments by default.

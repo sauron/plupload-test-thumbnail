@@ -1,0 +1,6 @@
+common: &local_settings
+  storage: :filesystem
+  url: "/system/:dynamic"
+
+development:
+  <<: *local_settings
