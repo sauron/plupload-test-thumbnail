@@ -1,0 +1,15 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: testplupload_dev
+  username: root
+  password: '1234'
+  pool: 5
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: testplupload_test
+  username: root
+  password: '1234'
+  pool: 5
