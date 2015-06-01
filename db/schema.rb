@@ -13,26 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20150601182349) do
 
-  create_table "announcements", :force => true do |t|
-    t.string   "title"
-    t.string   "description"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-  end
-
-  create_table "press_mentions", :force => true do |t|
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-  end
-
   create_table "presses", :force => true do |t|
     t.string   "title"
     t.string   "description"
