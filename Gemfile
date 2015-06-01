@@ -7,7 +7,13 @@ gem 'rails', '3.2.20'
 gem "unicorn",              "~> 4.8.3", require: false
 
 gem "figaro",               "~> 0.7.0"
-gem "mysql2",               "~> 0.3.16"
+group :development do
+  gem "mysql2",               "~> 0.3.16"
+end
+
+group :production do
+  gem "pg"
+end
 
 gem 'paperclip',            '4.2.1'
 
