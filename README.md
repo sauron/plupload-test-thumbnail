@@ -1,4 +1,4 @@
-== Plupload test without actualy uploading the image.
+# Plupload test without actualy uploading the image.
 
 This is a simple test app used to verify the ability of Pluload to generate a
 thumbnail without uploading the image.
@@ -27,15 +27,15 @@ streaming the image.
 When the form is submitted the image is streamed and assigned to the
 attachement in the PressesController with
 ```ruby
-   @press.image = params[:file_image]
+  @press.image = params[:file_image]
 ```
 
-= Notes
- - This is not a perfect solution
+## Notes
+ - **This is not a perfect solution**
  - This can totally be improves.
  - This is a sample app.
 
-= Technologies:
+## Technologies:
  - Rails v3.2
  - Ruby v2.1.5
  - jQuery
