@@ -22,7 +22,7 @@ To handle the attachment I'm using Paperclip.
 
 I've downloaded and installed Plupload from http://www.plupload.com/download/
 
-On the app/views/presses/_form.html.erb I've hooked up some javascript to
+On the [app/views/presses/_form.html.erb](https://github.com/sauron/plupload-test-thumbnail/blob/master/app/views/presses/_form.html.erb#L41) I've hooked up some javascript to
 generate the thumbnail and fill a hidden text field. Something similar to
 streaming the image.
 
