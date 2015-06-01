@@ -1,5 +1,5 @@
 # Plupload thumbnail generation.
-## Rails Test App to generate a thumbnail before uploading an image.
+## Rails Test App - generate a thumbnail before uploading an image.
 
 This is a simple test app used to verify the ability of Pluload to generate a
 thumbnail without uploading the image.
