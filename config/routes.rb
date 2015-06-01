@@ -1,6 +1,6 @@
 Testplupload::Application.routes.draw do
   resources :presses
 
-  match "/" => 'press#index'
-  root :to  => 'press#index'
+  match "/" => 'presses#index'
+  root :to  => 'presses#index'
 end
