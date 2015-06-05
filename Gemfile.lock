@@ -30,10 +30,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.3)
     builder (3.0.4)
-    climate_control (0.0.3)
-      activesupport (>= 3.0)
-    cocaine (0.5.7)
-      climate_control (>= 0.0.3, < 1.0)
+    cocaine (0.3.2)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -60,10 +57,10 @@ GEM
     mime-types (1.25.1)
     multi_json (1.11.0)
     mysql2 (0.3.18)
-    paperclip (4.2.1)
-      activemodel (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (~> 0.5.3)
+    paperclip (2.3.16)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
       mime-types
     pg (0.18.2)
     polyglot (0.3.5)
@@ -121,11 +118,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cocaine (~> 0.3.2)
   coffee-rails (~> 3.2.1)
   figaro (~> 0.7.0)
   jquery-rails
   mysql2 (~> 0.3.16)
-  paperclip (= 4.2.1)
+  paperclip (~> 2.3.8)
   pg
   rails (= 3.2.20)
   sass-rails (~> 3.2.3)

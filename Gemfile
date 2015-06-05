@@ -15,7 +15,8 @@ group :production do
   gem "pg"
 end
 
-gem 'paperclip',            '4.2.1'
+gem 'paperclip',            '~> 2.3.8'
+gem "cocaine",              "~> 0.3.2"
 
 # Gems used only for assets and not required
 # in production environments by default.

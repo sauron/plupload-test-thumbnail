@@ -41,7 +41,11 @@ class PressesController < ApplicationController
   # POST /presses.json
   def create
     @press = Press.new(params[:press])
-    @press.image = params[:file_image]
+
+    image = extract_target(params[:file_image])
+    image.content_type = "image/jpeg"
+
+    @press.image = image
 
     respond_to do |format|
       if @press.save
@@ -80,5 +84,14 @@ class PressesController < ApplicationController
       format.html { redirect_to presses_url }
       format.json { head :no_content }
     end
+  end
+
+  REGEXP = /\Adata:([-\w]+\/[-\w\+\.]+)?;base64,(.*)/m
+
+  private
+
+  def extract_target(stream)
+    data_uri_parts = stream.match(REGEXP) || []
+    StringIO.new(Base64.decode64(data_uri_parts[2] || ''))
   end
 end
